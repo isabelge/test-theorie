@@ -31,15 +31,6 @@ python3 -m http.server 5173
 Dann `http://localhost:5173` öffnen. Der Server muss **aus dem Ordner `frontend`**
 gestartet werden, sonst wird die `index.html` nicht gefunden.
 
-## Auftrag
-
-Sie haben 35 Minuten Zeit, die Applikation manuell zu prüfen und so viele Fehler wie
-möglich zu finden. Halten Sie für jeden Fund fest: **Fundstelle** (Datei, Funktion oder
-Endpunkt), **Symptom** (was passiert, was sollte passieren) und **wie lange** ihr
-gesucht habt. Es ist nicht bekannt, wie viele Fehler es gibt.
-
-Prüft sowohl über die Oberfläche als auch direkt gegen die API:
-
 ```
 GET  /api/operations
 POST /api/calculate     Body: {"operation": "add", "a": 2, "b": 3}
